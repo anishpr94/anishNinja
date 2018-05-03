@@ -46,7 +46,7 @@ app.post('/form', function(req, res){
  
   var nodemailer = require('nodemailer');
   console.log('gmai111l ready');
-  var transporter = nodemailer.createTransport({
+  var transporter = nodemailer.createTransport("SMTP",{
     service: 'gmail',
     auth: {
       user: 'anishpr94@gmail.com',
