@@ -39,9 +39,7 @@ app.post('/form', function(req, res){
       //     email: req.body.email || null,
       //     message: req.body.message || null
       // }));
-      res.send(
-        'Message Sent Successfully! Thank you!'
-      );
+     
 
  
   var nodemailer = require('nodemailer');
@@ -68,8 +66,13 @@ app.post('/form', function(req, res){
       console.log(error);
     } else {
       console.log('Email sent: ' + info.response);
+      res.send(
+        'Message Sent Successfully! Thank you!'
+      );
     }
   });
+
+ 
 
 }, 1000)
   //debugging output for the terminal
