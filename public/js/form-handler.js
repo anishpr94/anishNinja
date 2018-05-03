@@ -43,6 +43,9 @@
     $data.append('<li><b>' +  jsonData + '</li>');
 
     $('#post-results-container').fadeIn();
+    setTimeout(function() {
+      $data.html('');
+      }, 2000);
   };
 
 //init on document ready
