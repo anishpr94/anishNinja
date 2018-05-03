@@ -44,7 +44,7 @@
 
     $('#post-results-container').fadeIn();
     setTimeout(function() {
-      $data.html('');
+      $('#post-results-container').remove();
       }, 2000);
   };
 
