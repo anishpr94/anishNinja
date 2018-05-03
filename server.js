@@ -54,7 +54,7 @@ app.post('/form', function(req, res){
   
   var mailOptions = {
     from: req.body.email,
-    to: req.body.email,
+    to:  'anishpr94@gmail.com',
     subject: 'Response from gypsy camp',
     text: req.body.message
   };

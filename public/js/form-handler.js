@@ -36,9 +36,11 @@
     $('.ajaxLoader').hide();
 
     //update the UI with the data returned from the AJAX call 
-    $.each(jsonData, function (key, val) {
-      $data.append('<li><b>' +  key + '</b>'   + val + '</li>');
-    });
+    // $.each(jsonData, function (key, val) {
+    //   $data.append('<li><b>' +  key + '</b>'   + val + '</li>');
+    // });
+
+    $data.append('<li><b>' +  jsonData + '</li>');
 
     $('#post-results-container').fadeIn();
   };
