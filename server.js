@@ -16,7 +16,7 @@ app.get('/',function(req,res){
 //   res.sendFile(path.join(__dirname+'/sitemap.html'));
 // });
 app.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
+  console.log('listening on',this.address().port);
 });
 
 console.log("Running at Port 3000");

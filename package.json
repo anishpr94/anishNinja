@@ -1,7 +1,11 @@
 {
   "name": "heroku-node",
   "description": "Our sample Node to Heroku app",
+  "version": "5.5.0",
   "main": "server.js",
+  "engines": {
+    "node": "5.5.0"
+  },
   "scripts": {
     "start": "node server.js"
   },
