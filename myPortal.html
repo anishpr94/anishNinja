@@ -16,6 +16,7 @@
 <link rel="icon" href="./images/leaf.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <script src ="./js/skills.js"></script>
+<script src ="./js/form-handler.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -30,6 +31,31 @@ body, html {
       width: 100%;
       height: 100%;
   }
+  .ajaxLoader{
+	display: none;
+	margin-left: 10px;
+}
+#post-results-container {
+	display: none;
+	clear: both;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #002366;
+	border-radius: 5px;
+}
+
+#post-results-container .data {
+	margin-top: 20px;
+}
+
+#post-results-container .data li{
+	margin-top: 20px;
+}
+
+#post-results-container .data b{
+	font-weight: bold;
+	margin-right: 10px;
+}
 
 .noMaxWidth{
   max-width: 100%;
@@ -647,7 +673,7 @@ z-index: 6;
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: anishpr94@yahoo.co.in<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <form method="POST" id="testForm">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -657,10 +683,16 @@ z-index: 6;
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <button class="w3-button w3-black w3-right w3-section"  type="submit" id="submitButton">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
+        <img class="ajaxLoader" src="images/ajax-loader.gif">
       </form>
+      <section id="post-results-container">
+        <h2>POST DATA</h2>
+        <p>Here is the data you posted:</p>
+        <ul class="data"></ul>
+      </section>
     </div>
   </div>
 </div>
