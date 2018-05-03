@@ -29,11 +29,10 @@ console.log("Running at Port 3000");
 
 
 app.post('/form', function(req, res){
-  res.setHeader('Content-Type', 'application/json');
+  // res.setHeader('Content-Type', 'text');
 
   //mimic a slow network connection
-  setTimeout(function(){
-
+ 
       // res.send(JSON.stringify({
       //     name: req.body.name || null,
       //     email: req.body.email || null,
@@ -65,16 +64,11 @@ app.post('/form', function(req, res){
     if (error) {
       console.log(error);
     } else {
-      console.log('Email sent: ' + info.response);
-      res.send(
-        'Message Sent Successfully! Thank you!'
-      );
+      console.log('Email sent: Anish ' + info.response);
+      res.send('Message Sent Successfully! Thank you!');
     }
   });
 
- 
-
-}, 1000)
   //debugging output for the terminal
   console.log('you posted: First Name: ' + req.body.name + ', Last Name: ' + req.body.email);
 });
