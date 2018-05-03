@@ -28,6 +28,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 console.log("Running at Port 3000");
 
 
+var minutes = 20, the_interval = minutes * 60 * 1000;
+
+setInterval(function() {
+var options = {
+host: 'dry-anchorage-70342.herokuapp.com'
+};
+http.get(options, function (http_res) {
+console.log("Sent http request to myapp.herokuapp.com to stay awake.");
+});
+}, the_interval);
+
 app.post('/form', function(req, res){
   // res.setHeader('Content-Type', 'text');
 
