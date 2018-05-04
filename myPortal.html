@@ -34,6 +34,8 @@ body, html {
   .ajaxLoader{
 	display: none;
 	margin-left: 10px;
+  width:40px;
+  height:40px;
 }
 #post-results-container {
 	display: none;
@@ -60,12 +62,20 @@ body, html {
 .noMaxWidth{
   max-width: 100%;
 }
+
+.noBottomPadding{
+  padding-bottom: 1px;
+}
+
+.noTopPadding{
+  padding-top: 1px;
+}
   .carousel-indicators{
     display: none;
   }
 
   .carousel-inner{
-    height: 100%;
+    height: 450px;
   }
 
   .ui.card>.image>img, .ui.cards>.card>.image>img{
@@ -480,7 +490,7 @@ z-index: 6;
     width: 100%;
 ">
 </iframe> -->
-<div class="w3-content w3-container noMaxWidth w3-padding-64" id="portfolio">	
+<div class="w3-content w3-container noMaxWidth w3-padding-64 noBottomPadding" id="portfolio">	
 <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
@@ -657,7 +667,7 @@ z-index: 6;
       </div> -->
  </div>
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-64 noTopPadding" id="contact">
   <h3 class="w3-center">WHERE I WORK</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
