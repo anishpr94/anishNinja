@@ -66,7 +66,7 @@ app.post('/form', function(req, res){
   var mailOptions = {
     from: req.body.email,
     to:  'anishpr94@gmail.com',
-    subject: 'Response from gypsy camp',
+    subject: 'Response from gypsy camp from' + req.body.name + ' : ' + req.body.email,
     text: req.body.message
   };
   console.log(mailOptions);
@@ -84,11 +84,11 @@ app.post('/form', function(req, res){
   console.log('you posted: First Name: ' + req.body.name + ', Last Name: ' + req.body.email);
 });
 
-var gitResult =[];
+// var gitResult =[];
 app.post('/gitUpdate', function(req, res){
   res.setHeader('Content-Type', 'application/json');
   gitResult.push(req.body);
       res.send(JSON.stringify({
-         content: gitResult
+         gitResult
       }));
 });

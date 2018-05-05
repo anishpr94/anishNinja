@@ -30,22 +30,22 @@
 
   }
 
-  function pollService (evt) {
+//   function pollService (evt) {
   
-     //make the AJAX call
-     $.ajax({
-       url: '/gitUpdate',
-       type: 'POST',
-       data: {
-        name: 'hey bro!'
-       },
-       success: printData
-     });
- }
+//      //make the AJAX call
+//      $.ajax({
+//        url: '/gitUpdate',
+//        type: 'POST',
+//        data: {
+//         name: 'hey bro!'
+//        },
+//        success: printData
+//      });
+//  }
 
- function printData(data){
-   console.log(data);
- }
+//  function printData(data){
+//    console.log(data);
+//  }
 
   function postSuccessHandler (jsonData) {
     var $data = $('#post-results-container .data');
@@ -64,7 +64,7 @@
     $('#post-results-container').fadeIn();
     setTimeout(function() {
       $('#post-results-container').hide();
-      pollService();
+      // pollService();
       }, 2000);
   };
 
