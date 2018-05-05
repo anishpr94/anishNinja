@@ -39,8 +39,12 @@
        data: {
         name: 'hey bro!'
        },
-       success: console.log(data)
+       success: printData
      });
+ }
+
+ function printData(data){
+   console.log(data);
  }
 
   function postSuccessHandler (jsonData) {
