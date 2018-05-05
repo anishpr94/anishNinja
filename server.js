@@ -1,5 +1,3 @@
-var request  =  require("https");
-
 var express = require("express");
 var app     = express();
 var path    = require("path");
@@ -36,7 +34,7 @@ setInterval(function() {
 var options = {
 host: 'dry-anchorage-70342.herokuapp.com'
 };
-request.get(options, function (http_res) {
+res.get(options, function (http_res) {
 console.log("Sent http request to myapp.herokuapp.com to stay awake.");
 });
 }, the_interval);
