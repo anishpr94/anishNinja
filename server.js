@@ -84,10 +84,8 @@ app.post('/form', function(req, res){
   console.log('you posted: First Name: ' + req.body.name + ', Last Name: ' + req.body.email);
 });
 
-var a ;
+var a ='';
 app.post('/gitUpdate', function(req, res){
-  res.setHeader('Content-Type', 'text');
- 
       res.send(
          a += 'coool'+ req.body
      );
