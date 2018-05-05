@@ -1,4 +1,4 @@
-import { request } from "https";
+var request  =  require("https");
 
 var express = require("express");
 var app     = express();
