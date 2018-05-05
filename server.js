@@ -2,6 +2,7 @@ var express = require("express");
 var app     = express();
 var path    = require("path");
 var bodyParser = require('body-parser');
+var http = require('http');
 
 app.use(express.static('public'))
 app.get('/',function(req,res){
@@ -34,7 +35,7 @@ setInterval(function() {
 var options = {
 host: 'dry-anchorage-70342.herokuapp.com'
 };
-res.get(options, function (http_res) {
+http.get(options, function (http_res) {
 console.log("Sent http request to myapp.herokuapp.com to stay awake.");
 });
 }, the_interval);
@@ -66,7 +67,7 @@ app.post('/form', function(req, res){
   var mailOptions = {
     from: req.body.email,
     to:  'anishpr94@gmail.com',
-    subject: 'Response from gypsy camp from' + req.body.name + ' : ' + req.body.email,
+    subject: 'Response from gypsy camp from ' + req.body.name + ' : ' + req.body.email,
     text: req.body.message
   };
   console.log(mailOptions);
