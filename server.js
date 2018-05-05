@@ -87,6 +87,6 @@ app.post('/form', function(req, res){
 var a ='';
 app.post('/gitUpdate', function(req, res){
       res.send(
-         a += 'coool'+ String(req.body)
+         a += req.body
      );
 });
