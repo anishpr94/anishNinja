@@ -18,260 +18,11 @@
 <script src ="./js/skills.js"></script>
 <script src ="./js/sendMail.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./css/portFolio.css" rel="stylesheet" type="text/css">
 
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8 !important;
-}
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  .ajaxLoader{
-	display: none;
-	margin-left: 10px;
-  margin-top: 10px;
-  width:40px;
-  height:40px;
-}
-#post-results-container {
-	display: none;
-	clear: both;
-	margin-top: 20px;
-	padding: 20px;
-	border: 1px solid #002366;
-	border-radius: 5px;
-}
 
-#post-results-container .data {
-	margin-top: 20px;
-}
-
-#post-results-container .data li{
-	margin-top: 20px;
-}
-
-#post-results-container .data b{
-	font-weight: bold;
-	margin-right: 10px;
-}
-
-.noMaxWidth{
-  max-width: 100%;
-}
-
-.noBottomPadding{
-  padding-bottom: 1px;
-}
-
-.noTopPadding{
-  padding-top: 1px;
-}
-  .carousel-indicators{
-    display: none;
-  }
-
-  .carousel-inner{
-    height: 100%;
-  }
-
-  .ui.card>.image>img, .ui.cards>.card>.image>img{
-    height:200px
-  }
-
-  .ui.fullHeight>.image>img, .ui.cards>.card>.image>img{
-    height:100%
-  }
-  .ui.fullWidth>.card {
-    width: 100%;
-  }
-
-.item1 { grid-area: content; }
-
-.grid-container {
-  display: grid;
-  grid: 'content content content content content';
-    
-  grid-gap: 25px;
-  padding: 25px;
-}
-.grid-container>div {
-  text-align: center;
-  padding:20px 0;
-  font-size: 30px;
-}
-
-.minWidthSkill{
-width: 19.99% !important;
-padding: 20px;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card-header{
-width:100%;
-background-color:white;
-border-bottom: white;}
-
-.myRowPadding{
-padding-bottom :15px;
-display:inline-block;
-}
-
-p{
-line-height:1.8;
-font-size: 17px;}
-.w3-bar-white{
-color: white
-}
-
-.whiteNavigation{
-  background-color: white;
-}
-
-
-.skillsImage{
-vertical-align:none;}
-
-
- .w3-dark-grey{
- background-color:#13414c!important
- }
-
- .border-curved{
-  border-style: ridge;
-    border-color: cadetblue;
-    border-radius: 50px;
-    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
- }
-
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('./images/anime-1524940318659-8487.jpg');
-    min-height: 100%;
-	opacity: 1;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("./images/hd-ant-man-wallpapers-images.jpg");
-    min-height: 400px;
-	opacity: 1;
-}
-
-/* Third image (Contact) */
-.bgimg-4 {
-  background-image: url("./images/thor.jpg");
-    min-height: 400px;
-}
-
-.alwaysTop {
-z-index: 6;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 50px;
-  width: 50px;
-  background-size: 100%, 100%;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 30px;
-  color: black;
-}
-
-.displayInline{
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 30px;
-  color: black;
-  }
-
-  .cardMargin{
-    padding-left: 100px;
-  }
-
-  .carousel-control-prev{
-    height: 60%;
-  }
-  .carousel-control-next{
-    height: 60%;
-  }
-
-
-  .card:hover {
-   background: cadetblue;
-    /* width: 350px;
-    transition: width 2s; */
-}
-
-@keyframes slideInFromTop {
-  0% {    
-    transform: translateY(-20%);
-  }
-  80% {
-    transform: translateY(0);
-  }
-}
-
-.transitionExpand{
-  animation: 1s ease-in-out 0s 1 slideInFromTop;
-  border-style: double;
-  border-color: cadetblue;
-}
-
-@keyframes slideFromBottom {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(60%);
-  }
-}
-
-.transitionCollapse{
-  animation: 1s ease 0s 1 slideFromBottom;
-}
-
-.fullWidth{
-  width:100%
-}
-
-.fullHeight{
-  height:100%;
-}
-
-.displayInline > .ui.card.margin10{
-  margin: 5px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 .bgimg-4{
-        background-attachment: scroll;
-    }
-}
 </style>
 <body>
 
@@ -285,9 +36,9 @@ z-index: 6;
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+    </a> -->
   </div>
 
   <!-- Navbar on small screens -->
@@ -295,7 +46,7 @@ z-index: 6;
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
   </div>
 </div>
 
@@ -316,7 +67,7 @@ z-index: 6;
      I have been part of a huge team and developed applications that are used by thousands of customers on a daily basis.
     I have handled and fixed crucial issues that aided customers and management. 
     I have good understanding of Web Technologies and I have contributed to client side as well as server side and automations.    
-   I find it my passion to build great products which are fast and friendly user interface. 
+   I find it my passion to build great products which are fast and have friendly user interface. 
     <div class="w3-col m6 w3-center w3-padding-large">
       <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Anish PR</b></p><br> -->
       <!-- <img src="anish.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> -->
@@ -436,7 +187,7 @@ z-index: 6;
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center" id='hasText'><em>Here are Language skills.<br> Click on the images to see more details</em></p><br>
+  <p class="w3-center" id='hasText'><em>Here is my Technology Stack<br> Click on the images to get more details</em></p><br>
 	
 	
 <div class="w3-content border-curved w3-container w3-padding-64" id="portfolio">	
