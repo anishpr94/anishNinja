@@ -38,7 +38,8 @@
        type: 'POST',
        data: {
         name: 'hey bro!'
-       }
+       },
+       success: console.log(data)
      });
  }
 
