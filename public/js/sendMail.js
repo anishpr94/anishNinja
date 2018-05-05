@@ -26,7 +26,21 @@
         },
         success: postSuccessHandler
       });
+
+
   }
+
+  function pollService (evt) {
+  
+     //make the AJAX call
+     $.ajax({
+       url: '/gitUpdate',
+       type: 'POST',
+       data: {
+        name: 'hey bro!'
+       }
+     });
+ }
 
   function postSuccessHandler (jsonData) {
     var $data = $('#post-results-container .data');
@@ -45,6 +59,7 @@
     $('#post-results-container').fadeIn();
     setTimeout(function() {
       $('#post-results-container').hide();
+      pollService();
       }, 2000);
   };
 
