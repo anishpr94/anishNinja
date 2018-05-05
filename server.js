@@ -84,11 +84,11 @@ app.post('/form', function(req, res){
   console.log('you posted: First Name: ' + req.body.name + ', Last Name: ' + req.body.email);
 });
 
-
+var gitResult =[];
 app.post('/gitUpdate', function(req, res){
   res.setHeader('Content-Type', 'application/json');
-
-      res.send(
-         req.body
-     );
+  gitResult.push(req.body);
+      res.send(JSON.stringify({
+         content: gitResult
+      }));
 });
