@@ -86,7 +86,7 @@ app.post('/form', function(req, res){
 
 var a ='';
 app.post('/gitUpdate', function(req, res){
-  res.setHeader('Content-Type', 'json');
+  res.setHeader('Content-Type', 'application/json');
 
       res.send(
          a += req.body
