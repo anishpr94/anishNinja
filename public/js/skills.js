@@ -90,7 +90,7 @@ function getSkill(index){
   'Java: Handling server side as well as midtier layer of projects. Projects done: Traffic management system and Blood bank database based on Swing, SQL.' +
   'Oracle service cloud: Apis using JAX-RS, Serialization of XML and deserialization using JAXB, handling complex data and performing operations on it, Servlets.' ,
   'Javascript: Personal favourite. 2+ years of hands-on experience in various javascript applications. Oracle service cloud front end for single page application using knockout js, jquery, pure javascript. '+
-  'Nodes js based service for parsing heapSnapshots and generate charts for analysis, Node js(Express framework) weather service using openweather apis. '+
+  'Nodes js based service for parsing heapSnapshots and generate charts for analysis, Node js(Express framework) weather service using openweather apis, NodeJs Based Alexa skill( using cheerio,rssParser,http modules) '+
 'Managing service workers, Node Js based services for scraping movie details, Web hooks for git hub.\n I Closely follow all developments associated - familiar with core concepts and es6 , es+',
 'Jenkins: Scripts to trigger builds, manage children, adding plugins, writing pipelines for automations tasks, Auto Branch Update Jobs - A generic job which helps anyone to keep updating their branch on a daily basis until they have merged it.',
  'MongoDB: Experimental projects like Weather fetcher, Simple nodejs + mongodb based forum module of an application for discussion',
