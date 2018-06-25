@@ -59,7 +59,7 @@ app.post('/form', function(req, res){
     service: 'gmail',
     auth: {
       user: 'anishpr94@gmail.com',
-      pass: 'herokupass'
+      pass: '*****'
     }
   });
   console.log('gmail ready');
